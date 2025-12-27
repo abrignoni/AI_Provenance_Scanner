@@ -1,0 +1,26 @@
+# ==============================
+# Python dependencies
+# ==============================
+c2pa==0.14.0             # C2PA Python library
+ExifTool==0.5.4          # Python wrapper for ExifTool
+python-magic==0.5.0      # Optional: MIME type detection (requires libmagic)
+
+# ==============================
+# External / system dependencies
+# ==============================
+# ExifTool (required by ExifToolHelper)
+#   macOS: brew install exiftool
+#   Linux: sudo apt install libimage-exiftool-perl
+#   Windows: Download from https://exiftool.org/ and add exiftool.exe to PATH
+#
+# Optional: 'file' command / libmagic for improved MIME detection
+#   macOS/Linux: usually pre-installed
+#   Windows: use python-magic-bin: pip install python-magic-bin
+
+# ==============================
+# Notes on script arguments
+# ==============================
+# --flattened : Show the fully flattened C2PA manifest in the human-readable report
+#               By default, flattened manifest is hidden to keep reports concise.
+# --json      : Output all data in JSON format
+# --c2pa-only : Skip IPTC extraction and only process C2PA data
